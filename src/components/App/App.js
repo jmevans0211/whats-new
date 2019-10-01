@@ -1,26 +1,33 @@
 import React, { Component } from 'react';
-import data from '../../data/local';
+// import { entertainment, health, local, science, technology } from '../../data';
+import news from '../../data/news';
 import NewsContainer from '../NewsContainer/NewsContainer';
 import Menu from '../Menu/Menu'
 import SearchForm from '../SearchForm/SearchForm';
 import './App.css';
 
-console.log(data)
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      // data: data.local
+      data: news,
+      topic: 'local'
     }
   }
 
-  render () {
+  selectTopic = (topic) => {
+    this.setState({topic: topic})
+  }
+  //^^^can take out 'topic:' ^^^
+
+  render() {
+    console.log(this.state.data)
     return (
       <div className="app">
         <SearchForm />
         <div className="selectedNews">
-          <Menu />
-          <NewsContainer />
+          <Menu selectTopic={this.selectTopic}/>
+          <NewsContainer data={this.state.data[this.state.topic]}/>
         </div>
       </div>
     );

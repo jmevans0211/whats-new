@@ -1,14 +1,20 @@
 import React from 'react';
 import './Menu.css'
 
-const Menu = () => {
+const Menu = (props) => {
+
+  const handleClick = (event) => {
+    console.log(event.target.className)
+    props.selectTopic(event.target.className)
+  }
+
   return (
     <ul>
-      <li>Entertainment</li>
-      <li>Health</li>
-      <li>Local</li>
-      <li>Science</li>
-      <li>Technology</li>
+      <li onClick={handleClick} className="entertainment">Entertainment</li>
+      <li onClick={handleClick} className="health">Health</li>
+      <li onClick={handleClick} className="local">Local</li>
+      <li onClick={handleClick} className="science">Science</li>
+      <li onClick={handleClick} className="technology">Technology</li>
     </ul>
   )
 }
