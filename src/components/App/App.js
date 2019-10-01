@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import local from '../../data/local';
-import NewsContainer from '../NewsContainer/NewsContainer'
+import NewsContainer from '../NewsContainer/NewsContainer';
+import Menu from '../Menu/Menu'
 import './App.css';
 
 class App extends Component {
@@ -15,6 +16,7 @@ class App extends Component {
     return (
       <div className="app">
         <NewsContainer />
+        {/* <Menu /> */}
       </div>
     );
   }

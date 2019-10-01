@@ -1,12 +1,12 @@
 import React from 'react';
 import './NewsArticle.css';
 
-function NewsArticle(props) {
+const NewsArticle = (props) => {
   const { headline } = props;
   const { img } = props;
   const { description } = props;
   const { url } = props
-  
+
   return (
     <article>
       <img src={ img} alt={ description }/>
