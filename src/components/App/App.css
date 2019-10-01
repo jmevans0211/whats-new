@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-.app {
+.selectedNews {
   display: flex;
   background: #141527;
   color: white;

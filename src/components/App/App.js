@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-// import data from '../../data';
+import data from '../../data/local';
 import NewsContainer from '../NewsContainer/NewsContainer';
-// import Menu from '../Menu/Menu'
+import Menu from '../Menu/Menu'
+import SearchForm from '../SearchForm/SearchForm';
 import './App.css';
 
+console.log(data)
 class App extends Component {
   constructor() {
     super();
@@ -15,8 +17,11 @@ class App extends Component {
   render () {
     return (
       <div className="app">
-        <NewsContainer />
-        {/* <Menu /> */}
+        <SearchForm />
+        <div className="selectedNews">
+          <Menu />
+          <NewsContainer />
+        </div>
       </div>
     );
   }
