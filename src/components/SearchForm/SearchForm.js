@@ -9,11 +9,16 @@ class SearchForm extends Component {
     }
   };
 
+  handleSearch(event) {
+    event.preventDefault()
+    console.log('in handleSearch***')
+  }
+
   render() {
     return (
       <form>
         <input type="text"/>
-        <button>Submit Search</button>
+        <button onClick={this.handleSearch}>Submit Search</button>
       </form>
     )
   }
