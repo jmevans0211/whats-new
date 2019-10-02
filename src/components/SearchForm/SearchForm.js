@@ -10,13 +10,13 @@ class SearchForm extends Component {
   };
 
   handleChange = (event) => {
-    this.setState({searchField: event.target.value})
+    this.setState({ searchField: event.target.value })
   }
 
   handleSearch = (event) => {
     event.preventDefault()
     console.log('in handleSearch***', this.state.searchField)
-    
+    this.setState({ searchField: '' })
   }
 
   render() {
