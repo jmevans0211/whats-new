@@ -10,14 +10,15 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      data: news,
-      topic: 'local',
+      // data: news,
+      // topic: 'local',
       currentTopic: news.local
     }
   }
 
   selectTopic = (topic) => {
-    this.setState({ topic: topic })
+    console.log('in selectTopic***', topic)
+    this.setState({ currentTopic: news[topic] })
   }
   //^^^can take out 'topic:' ^^^
 
