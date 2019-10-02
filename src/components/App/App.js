@@ -11,22 +11,30 @@ class App extends Component {
     super();
     this.state = {
       data: news,
-      topic: 'local'
+      topic: 'local',
+      currentTopic: news.local
     }
   }
 
   selectTopic = (topic) => {
-    this.setState({topic: topic})
+    this.setState({ topic: topic })
   }
   //^^^can take out 'topic:' ^^^
+
+  filterSearch = (search) => {
+    const filteredSearch = this.state.currentTopic.filter(article => {
+      return article.headline === search
+    })
+    this.setState({ currentTopic: filteredSearch })
+  }
 
   render() {
     return (
       <div className="app">
-        <SearchForm />
+        <SearchForm search={this.filterSearch}/>
         <div className="selectedNews">
           <Menu selectTopic={this.selectTopic}/>
-          <NewsContainer data={this.state.data[this.state.topic]}/>
+          <NewsContainer data={this.state.currentTopic}/>
         </div>
       </div>
     );

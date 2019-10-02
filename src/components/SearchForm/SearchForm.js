@@ -15,7 +15,7 @@ class SearchForm extends Component {
 
   handleSearch = (event) => {
     event.preventDefault()
-    console.log('in handleSearch***', this.state.searchField)
+    this.props.search(this.state.searchField)
     this.setState({ searchField: '' })
   }
 
