@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { entertainment, health, local, science, technology } from '../../data';
 import news from '../../data/news';
 import NewsContainer from '../NewsContainer/NewsContainer';
 import Menu from '../Menu/Menu'
@@ -10,8 +9,6 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      // data: news,
-      // topic: 'local',
       currentTopic: news.local
     }
   }
