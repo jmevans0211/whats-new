@@ -21,7 +21,6 @@ class App extends Component {
   //^^^can take out 'topic:' ^^^
 
   render() {
-    console.log(this.state.data)
     return (
       <div className="app">
         <SearchForm />

@@ -4,7 +4,6 @@ import './Menu.css'
 const Menu = (props) => {
 
   const handleClick = (event) => {
-    console.log(event.target.className)
     props.selectTopic(event.target.className)
   }
 
