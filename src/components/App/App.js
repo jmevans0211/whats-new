@@ -14,7 +14,6 @@ class App extends Component {
   }
 
   selectTopic = (topic) => {
-    console.log('in selectTopic***', topic)
     this.setState({ currentTopic: news[topic] })
   }
   //^^^can take out 'topic:' ^^^
