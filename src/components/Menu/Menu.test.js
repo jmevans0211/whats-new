@@ -6,8 +6,6 @@ describe('Menu', () => {
   it('should match the snapshot with all data passed in correctly', () => {
     const wrapper = shallow(<Menu selectTopic='local'/>)
 
-    console.log('WRAP THIS', wrapper)
-
     expect(wrapper).toMatchSnapshot();
   });
 
