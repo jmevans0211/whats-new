@@ -20,9 +20,12 @@ class App extends Component {
 
   filterSearch = (search) => {
     const filteredSearch = this.state.currentTopic.filter(article => {
-      return article.headline === search
+      return article.headline.includes(search)
     })
     this.setState({ currentTopic: filteredSearch })
+
+    // upper/lowercase everything
+    //also include description
   }
 
   render() {
