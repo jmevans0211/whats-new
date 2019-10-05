@@ -22,8 +22,6 @@ class App extends Component {
       return article.headline.toLowerCase().includes(search.toLowerCase()) || article.description.toLowerCase().includes(search.toLowerCase())
     })
     this.setState({ currentTopic: filteredSearch })
-
-    // upper/lowercase everything
   }
 
   render() {
