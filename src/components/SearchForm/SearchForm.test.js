@@ -35,7 +35,6 @@ describe('SearchForm', () => {
     wrapper.find('button').simulate('click', mockEvent)
 
     expect(wrapper.instance().handleSearch).toHaveBeenCalledWith(mockEvent)
-
   });
 
 
