@@ -24,6 +24,20 @@ describe('SearchForm', () => {
     expect(wrapper.state('searchField')).toEqual(searchEvent.target.value)
   });
 
+  it('should search once button is clicked', () => {
+    const mockfilterSearch = jest.fn()
+    const wrapper = shallow(<SearchForm search={mockfilterSearch}/>)
+    const mockEvent = { preventDefault: jest.fn() };
+    wrapper.instance().handleSearch = jest.fn();
+
+    wrapper.instance().forceUpdate();
+
+    wrapper.find('button').simulate('click', mockEvent)
+
+    expect(wrapper.instance().handleSearch).toHaveBeenCalledWith(mockEvent)
+
+  });
+
 
 
 }); //<<-----end of describe block
@@ -31,10 +45,6 @@ describe('SearchForm', () => {
 
 //TESTS TO HAVE
 
-//handle change
-  //test that the state has indeed changed when there is an input
-    //mimic input
-      //set state
     
 //onClick
   //that handle search has been called
