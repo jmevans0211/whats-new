@@ -16,16 +16,14 @@ class App extends Component {
   selectTopic = (topic) => {
     this.setState({ currentTopic: news[topic] })
   }
-  //^^^can take out 'topic:' ^^^
 
   filterSearch = (search) => {
     const filteredSearch = this.state.currentTopic.filter(article => {
-      return article.headline.includes(search) || article.description.includes(search)
+      return article.headline.includes(search.toLowerCase()) || article.description.includes(search.toLowerCase())
     })
     this.setState({ currentTopic: filteredSearch })
 
     // upper/lowercase everything
-    //also include description
   }
 
   render() {
