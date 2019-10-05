@@ -19,7 +19,7 @@ class App extends Component {
 
   filterSearch = (search) => {
     const filteredSearch = this.state.currentTopic.filter(article => {
-      return article.headline.includes(search.toLowerCase()) || article.description.includes(search.toLowerCase())
+      return article.headline.toLowerCase().includes(search.toLowerCase()) || article.description.toLowerCase().includes(search.toLowerCase())
     })
     this.setState({ currentTopic: filteredSearch })
 
