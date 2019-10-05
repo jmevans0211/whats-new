@@ -10,19 +10,26 @@ describe('SearchForm', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it('should update state when search is being inputted', () => {
+    const mockfilterSearch = jest.fn()
+    const wrapper = shallow(<SearchForm  search={mockfilterSearch}/>)
+
+    const searchEvent = {
+      target: {
+        value: 'the who'
+      }
+    }
+
+    wrapper.instance().handleChange(searchEvent)
+    expect(wrapper.state('searchField')).toEqual(searchEvent.target.value)
+  });
 
 
-  // it('should match the snapshot', () => {
-  //   const wrapper = shallow(<Form addIdea={mockAddIdea} />)
-  //   expect(wrapper).toMatchSnapshot();
-  // });
 
 }); //<<-----end of describe block
 
 
 //TESTS TO HAVE
-// state
-  //empty search field
 
 //handle change
   //test that the state has indeed changed when there is an input
