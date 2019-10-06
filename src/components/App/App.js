@@ -4,6 +4,10 @@ import NewsContainer from '../NewsContainer/NewsContainer';
 import Menu from '../Menu/Menu'
 import SearchForm from '../SearchForm/SearchForm';
 import './App.css';
+// const news = fetch('https://whats-new-api.herokuapp.com/api/v1/news')
+// .then(data => data.json())
+// .then(data => console.log(data))
+// .catch(err => console.log('error!'))
 
 class App extends Component {
   constructor() {

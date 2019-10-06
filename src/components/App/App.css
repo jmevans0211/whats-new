@@ -1,14 +1,17 @@
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
+}
+
+.app {
+  border: black solid 5px;
+  border-radius: 10px;
 }
 
 .selectedNews {
   display: flex;
   background: #141527;
   color: white;
-  /* height: 100vh; */
   text-align: center;
   width: 100%;
 }
