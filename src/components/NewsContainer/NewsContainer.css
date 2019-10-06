@@ -1,6 +1,11 @@
 main {
   display: grid;
   column-gap: 20px;
-  grid-template-columns: 500px 500px;
+  grid-template-columns: 400px 500px;
   row-gap: 1em;
+  width: 80%;
+}
+
+h2{
+  font-size: 20px;
 }
