@@ -15,5 +15,6 @@
 }
 
 img {
+  border: black double 3px;
   height: 200px
 }
