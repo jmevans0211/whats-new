@@ -1,3 +1,9 @@
-ul{
+ul {
+  border-right: black solid 5px;
+  font-size: 26px;
   width: 20%;
+}
+
+li {
+  margin: 30px 0;
 }
