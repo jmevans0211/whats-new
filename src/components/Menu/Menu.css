@@ -1,9 +1,11 @@
 ul {
   border-right: black solid 5px;
   font-size: 26px;
+  margin: 0;
   width: 20%;
 }
 
 li {
+  cursor: pointer;
   margin: 30px 0;
 }
