@@ -9,3 +9,7 @@ li {
   cursor: pointer;
   margin: 30px 0;
 }
+
+li:hover {
+  color: #11CEE3;
+}
