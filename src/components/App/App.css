@@ -16,5 +16,5 @@
 
 img {
   border: black double 3px;
-  height: 200px
+  max-height: 200px;
 }

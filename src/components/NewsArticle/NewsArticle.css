@@ -1,5 +1,8 @@
 article {
   border: black solid 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 380px;
   padding: 20px 10px;
 }
