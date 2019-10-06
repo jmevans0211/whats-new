@@ -10,12 +10,10 @@
 
 .selectedNews {
   display: flex;
-  background: #141527;
-  color: white;
   text-align: center;
   width: 100%;
 }
 
 img {
-  height: 300px
+  height: 200px
 }

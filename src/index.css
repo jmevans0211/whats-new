@@ -1,5 +1,5 @@
 body {
-  font-family: "IM Fell DW Pica", "Segoe UI", "Roboto", "Oxygen",
+  font-family: "Oswald", "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
     -moz-osx-font-smoothing: grayscale;
@@ -7,5 +7,5 @@ body {
   }
   
   code {
-  font-family: 'IM Fell DW Pica', serif;
+  font-family: "Oswald", sans-serif;
 }
