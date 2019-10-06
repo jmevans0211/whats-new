@@ -9,7 +9,9 @@ const NewsArticle = (props) => {
 
   return (
     <article>
-      <img src={ img } alt={ description }/>
+      <div>
+        <img src={ img } alt={ description }/>
+      </div>
       <h2>{ headline }</h2>
       <p>{ description }</p>
       <footer><a href={ url }>Link To article</a></footer>

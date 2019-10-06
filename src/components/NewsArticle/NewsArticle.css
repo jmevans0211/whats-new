@@ -7,3 +7,8 @@ article {
   max-width: 380px;
   padding: 20px 10px;
 }
+
+img {
+  border: black double 3px;
+  max-height: 200px;
+}
