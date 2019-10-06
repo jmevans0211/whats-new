@@ -9,6 +9,10 @@ h1 {
   padding-left: 60px;
 }
 
+h1 span {
+  color: #11CEE3;
+}
+
 form {
   height: 60px;
   padding: 20px;
@@ -18,4 +22,11 @@ form {
 input, button {
   height: 100%;
   width: 50%;
+}
+
+button {
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  background-color: #11CEE3
 }

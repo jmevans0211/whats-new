@@ -22,7 +22,7 @@ class SearchForm extends Component {
   render() {
     return (
       <header>
-        <h1>What's New?</h1>
+        <h1>What's  <span>New</span> ?</h1>
         <form>
           <input type="text" placeholder="Search" onChange={event => this.handleChange(event)} value={this.state.searchField}/>
           <button onClick={this.handleSearch}>Submit Search</button>
