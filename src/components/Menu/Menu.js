@@ -8,7 +8,7 @@ const Menu = (props) => {
   }
 
   return (
-    <ul>
+    <ul role="navigation">
       <li onClick={handleClick} className="entertainment">Entertainment</li>
       <li onClick={handleClick} className="health">Health</li>
       <li onClick={handleClick} className="local">Local</li>
