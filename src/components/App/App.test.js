@@ -39,7 +39,7 @@ describe('App', () => {
 
     expect(wrapper.state('currentTopic')).toEqual(expected)
   });
-}); //<<<-----end of App
+});
 
 
 
