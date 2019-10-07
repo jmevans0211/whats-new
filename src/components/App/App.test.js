@@ -12,14 +12,10 @@ describe('App', () => {
 
   it('should update state when a new topic is selected', () => {
     const wrapper = shallow(<App />);
-    const mockNews = {
-      entertainment: entertainment
-    };
-    const expected = mockNews.entertainment;
 
     wrapper.instance().selectTopic('entertainment')
 
-    expect(wrapper.state('currentTopic')).toEqual(expected);
+    expect(wrapper.state('currentTopic')).toEqual('entertainment');
   });
 
   it('should update state when something is searched', () => {

@@ -36,14 +36,4 @@ describe('SearchForm', () => {
 
     expect(wrapper.instance().handleSearch).toHaveBeenCalledWith(mockEvent)
   });
-
-
-
-}); //<<-----end of describe block
-
-
-//TESTS TO HAVE
-
-    
-//onClick
-  //that handle search has been called
+});

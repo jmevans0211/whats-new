@@ -3,7 +3,11 @@
 exports[`SearchForm should match the snapshot 1`] = `
 <header>
   <h1>
-    What's New?
+    What's  
+    <span>
+      New
+    </span>
+     ?
   </h1>
   <form>
     <input

@@ -33,7 +33,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.news)
     return (
       <div className="app">
         <SearchForm search={this.filterSearch}/>
