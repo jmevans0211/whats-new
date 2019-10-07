@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import news from '../../data/news';
 import NewsContainer from '../NewsContainer/NewsContainer';
 import Menu from '../Menu/Menu'
 import SearchForm from '../SearchForm/SearchForm';

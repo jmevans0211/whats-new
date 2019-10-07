@@ -1,8 +1,9 @@
 header {
-  border-bottom: black solid 5px;
+  background-image: url('./header_background.jpg');
+  border-bottom: black solid 2px;
   display: flex;
   justify-content: space-between;
-  background-image: url('./header_background.jpg');
+  padding: 60px 0;
 }
 
 h1 {
@@ -13,10 +14,6 @@ h1 {
   padding: 0 22px 6px 23px;
 }
 
-/* h1 span {
-  color: #11CEE3;
-} */
-
 form {
   height: 60px;
   padding: 20px;
@@ -24,7 +21,8 @@ form {
 }
 
 input, button {
-  height: 100%;
+  padding: 15px;
+  transform: translateY(-59px);
   width: 50%;
 }
 
