@@ -1,6 +1,6 @@
 # What's New?
 
-What's New is an application allowing the user to follow the latest news. Users can select from the menu on the right to browse different categories. Selecting an article will take them directly to the source. Categories include local, entertainment, science, technology, and health. This application was built with `create-react-app`.
+What's New is an application allowing the user to follow the latest news. Users can select from the menu on the right to browse different categories. Selecting an article will take them directly to the source. Categories include local, entertainment, science, technology, and health. This application used the React Framework and was built with `create-react-app`.
 
 ### Set Up
 
