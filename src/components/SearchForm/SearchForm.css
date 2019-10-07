@@ -2,16 +2,20 @@ header {
   border-bottom: black solid 5px;
   display: flex;
   justify-content: space-between;
+  background-image: url('./header_background.jpg');
 }
 
 h1 {
+  background-color: red;
+  color: white;
   font-size: 70px;
-  padding-left: 60px;
+  margin-left: 60px;
+  padding: 0 22px 6px 23px;
 }
 
-h1 span {
+/* h1 span {
   color: #11CEE3;
-}
+} */
 
 form {
   height: 60px;
@@ -28,5 +32,5 @@ button {
   color: white;
   cursor: pointer;
   font-weight: 500;
-  background-color: #11CEE3
+  background-color: red
 }

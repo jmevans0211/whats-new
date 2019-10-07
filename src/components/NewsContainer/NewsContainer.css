@@ -2,7 +2,7 @@ main {
   column-gap: 164px;
   display: grid;
   grid-template-columns: 400px 400px;
-  margin: 7%;
+  margin: 1% 7%;
   row-gap: 5em;
   width: 80%;
 }

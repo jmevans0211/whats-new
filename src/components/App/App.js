@@ -4,21 +4,25 @@ import NewsContainer from '../NewsContainer/NewsContainer';
 import Menu from '../Menu/Menu'
 import SearchForm from '../SearchForm/SearchForm';
 import './App.css';
-// const news = fetch('https://whats-new-api.herokuapp.com/api/v1/news')
-// .then(data => data.json())
-// .then(data => console.log(data))
-// .catch(err => console.log('error!'))
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      currentTopic: news.local
+      news: null,
+      currentTopic: 'local'
     }
   }
 
-  selectTopic = (topic) => {
-    this.setState({ currentTopic: news[topic] })
+  componentDidMount() {
+    fetch('https://whats-new-api.herokuapp.com/api/v1/news')
+    .then(response => response.json())
+    .then(news => this.setState({ news }))
+    .catch(err => console.log('error!'))
+  }
+
+  selectTopic = (currentTopic) => {
+    this.setState({ currentTopic })
   }
 
   filterSearch = (search) => {
@@ -29,12 +33,15 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.state.news)
     return (
       <div className="app">
         <SearchForm search={this.filterSearch}/>
         <div className="selectedNews">
           <Menu selectTopic={this.selectTopic}/>
-          <NewsContainer data={this.state.currentTopic}/>
+          {this.state.news &&
+            <NewsContainer data={this.state.news[this.state.currentTopic]}/>
+          }
         </div>
       </div>
     );
