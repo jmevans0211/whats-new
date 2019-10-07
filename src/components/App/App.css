@@ -4,11 +4,6 @@
   padding: 0;
 }
 
-/* .app {
-  border: black solid 5px;
-  border-radius: 10px;
-} */
-
 .selectedNews {
   display: flex;
   text-align: center;
