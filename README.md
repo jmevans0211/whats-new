@@ -9,11 +9,11 @@ What's New is an application built in **React** allowing the user to follow the 
 
 In your terminal:
 
-  Clone down this repo.
+   `git clone https://github.com/jmevans0211/whats-new.git`
 
-  run `npm install`
+   run `npm install`
 
-  run `npm start`
+   run `npm start`
 
 ### Screenshot
 
